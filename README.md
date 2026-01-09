@@ -29,7 +29,7 @@ This repository documents the steps to install and run Jenkins inside a Docker c
   - Reduces risk of breaking the system when upgrading Jenkins or its dependencies.
 
 ## Prerequisites
-Before you being, make sure you have:
+Before you begin, make sure you have:
 * A DigitalOcean account (or any cloud provider).
 * Basic knowledge of Linux commands and SSH.
 * A local machine with SSH client installed (to connect to the droplet).
