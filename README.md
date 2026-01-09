@@ -77,6 +77,7 @@ Before you being, make sure you have:
 
 7. Configure Jenkins
    - Install recommended plugins
+   ![alt text](image.png)
    - Create your first admin user
 
 8. Start building pipelines!
