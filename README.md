@@ -4,21 +4,21 @@
 This repository documents the steps to install and run Jenkins inside a Docker container on a DigitalOcean Virtual Machine ("droplet"). Jenkins is an open-source automation server widely used for CI/CD pipelines.
 
 ## Why run Jenkins in a Docker container instead of installing it directly on the Droplet OS?
-* Isolation & Portability
+* **Isolation & Portability**
   - Jenkins and its dependencies live inside the container, avoiding conflicts with host packages.
   - The same image works across different VMs/clouds—build once, run anywhere.
-* Simplified Installation & Upgrades
+* **Simplified Installation & Upgrades**
   - No need to install Java or configure system services on the droplet.
   - Upgrading Jenkins is as simple as pulling a new Docker image and restarting the container.
-* Consistency Across Environments
+* **Consistency Across Environments**
   - The same Docker image can be used in development, staging, and production, ensuring consistent behavior.
-* Easy Backup & Restore
+* **Easy Backup & Restore**
   - Jenkins data is stored in a Docker volume, making backups straightforward.
   - You can quickly restore by mounting the same volume to a new container.
-* Faster Recovery & Scaling
+* **Faster Recovery & Scaling**
   - If Jenkins crashes, you can redeploy the container in seconds.
   - Supports horizontal scaling with container orchestration tools like Kubernetes.
-* Cleaner Host System
+* **Cleaner Host System**
   - Keeps the VM clean—no extra packages or dependencies installed on the OS.
   - Reduces risk of breaking the system when upgrading Jenkins or its dependencies.
 
