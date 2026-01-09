@@ -57,6 +57,7 @@ Before you being, make sure you have:
      ```
      apt update
      apt install docker
+     apt install docker-compose
      
      ```
      
