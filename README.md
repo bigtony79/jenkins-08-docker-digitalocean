@@ -54,6 +54,11 @@ Before you being, make sure you have:
       
 3. Install Docker
    - Run the following commands on your droplet
+     ```
+     apt update
+     apt install docker
+     
+     ```
      
 4. Pull latest Jenkins Docker Image from DockerHub
 
