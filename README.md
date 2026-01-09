@@ -60,12 +60,11 @@ Before you being, make sure you have:
           
      ```
      
-4. Pull latest Jenkins Docker Image from DockerHub
+4. Pull a desired Jenkins Docker Image from DockerHub and run jenkins container
+    ```
+    docker run -d  -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home --name jenkins jenkins/jenkins:alpine-jdk17
 
-
-5. Run Jenkins Container
-
-6. Access Jenkins
+5. Access Jenkins
    - Open your favorite browser and go to:
      ```
      http://<your-droplet-public-ipv4>:8080/
@@ -75,7 +74,7 @@ Before you being, make sure you have:
      docker exec -it -u 0 <container name or ID> cat /var/jenkins_home/secrets/initialAdminPassword
      ```
 
-7. Configure Jenkins
+6. Configure Jenkins
    - Install recommended plugins
 
       ![alt text](image.png)
@@ -85,11 +84,11 @@ Before you being, make sure you have:
 
       ![alt text](image-2.png)
 
-8. Click *Save and Finish* button
+7. Click *Save and Finish* button
 
    ![alt text](image-3.png)
 
-9. Start building pipelines!
+8. Start building pipelines!
 
     ![alt text](image-4.png)
    
