@@ -32,10 +32,14 @@ Before you being, make sure you have:
 1. Provision a DigitalOcean Droplet
    - Create a Droplet
      - **Datacenter** - Choose the closest datacenter to you
-     - **OS** - Select Ubuntu as the OS with the latest version
-     - **Droplet Type** - Select "Shared CPU - Basic"
+     - **OS** - Select *Ubuntu* as the OS with the latest version.
+     - **Droplet Type** - Select *Shared CPU - Basic* option.
      - **CPU options** - Select the *2CPUs - 4GB RAM - 80GB* which should be sufficient enough to run Jenkins Docker container.
    - Configure SSH keys for secure access
+     - You can follow the instructions provided by DigitalOcean to generate the public and private SSH keys.
+   - Create and attach firewall to new droplet
+     - **Inbound Rules**
+       - Restrict port 22 (SSH) and 8080 (Jenkins) to trusted client machine IPs.       
 2. Install Docker
    - Run the following commands on your droplet
 3. Pull latest Jenkins Docker Image from DockerHub
