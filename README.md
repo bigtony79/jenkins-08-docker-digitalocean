@@ -17,10 +17,8 @@ This repository documents the steps to install and run Jenkins inside a Docker c
 3. Pull latest Jenkins Docker Image from DockerHub
 4. Run Jenkins Container
 5. Access Jenkins
-   - Open your favorite browser and go to:
-   '''
-      http://<your-droplet-ip>:8080/
-   '''
+   - Open your favorite browser and go to: 'http://<your-droplet-ip>:8080/'
+   
 
 
 
