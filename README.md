@@ -37,20 +37,43 @@ Before you being, make sure you have:
      - **CPU options** - Select the *2CPUs - 4GB RAM - 80GB* which should be sufficient enough to run Jenkins Docker container.
    - Configure SSH keys for secure access
      - You can follow the instructions provided by DigitalOcean to generate the public and private SSH keys.
-   - Create and attach firewall to new droplet
+   - Create a new network firewall rule for the droplet.
+     - Assign any name for the firewall such as "jenkins-fw".
      - **Inbound Rules**
-       - Restrict port 22 (SSH) and 8080 (Jenkins) to trusted client machine IPs.       
-2. Install Docker
+       - Restrict port 22 (SSH) and 8080 (Jenkins) to trusted client machine IPs.
+     - Attach the droplet to the new firewall.
+       
+2. Launch the droplet and connect to it using its public IPv4 address:
+  ```
+  ssh root@<your-droplet-public-ipv4>
+  ```
+  - Note: You won’t be prompted for a password if:
+    - SSH keys were correctly configured during droplet creation.
+    - The public key was added to the droplet.
+    - The corresponding private key is available on your local machine.
+      
+3. Install Docker
    - Run the following commands on your droplet
-3. Pull latest Jenkins Docker Image from DockerHub
-4. Run Jenkins Container
-5. Access Jenkins
-   - Open your favorite browser and go to: ```http://<your-droplet-ip>:8080/```
-   - Retrieve the initial admin password ```docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword```
-6. Configure Jenkins
+     
+4. Pull latest Jenkins Docker Image from DockerHub
+
+5. Run Jenkins Container
+
+6. Access Jenkins
+   - Open your favorite browser and go to:
+     ```
+     http://<your-droplet-public-ipv4>:8080/
+     ```
+   - Retrieve the initial admin password
+     ```
+     docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+     ```
+
+7. Configure Jenkins
    - Install recommended plugins
    - Create your first admin user
-7. Start building pipelines!
+
+8. Start building pipelines!
    
 
 
