@@ -45,8 +45,8 @@ Before you being, make sure you have:
 3. Pull latest Jenkins Docker Image from DockerHub
 4. Run Jenkins Container
 5. Access Jenkins
-   - Open your favorite browser and go to: `http://<your-droplet-ip>:8080/`
-   - Retrieve the initial admin password `docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword`
+   - Open your favorite browser and go to: ```http://<your-droplet-ip>:8080/```
+   - Retrieve the initial admin password ```docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword```
 6. Configure Jenkins
    - Install recommended plugins
    - Create your first admin user
