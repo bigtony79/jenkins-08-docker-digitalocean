@@ -3,6 +3,12 @@
 ## Overview
 This repository documents the steps to install and run Jenkins inside a Docker container on a DigitalOcean Virtual Machine ("droplet"). Jenkins is an open-source automation server widely used for CI/CD pipelines.
 
+## Technologies used:
+* DigitalOcean Droplet (Ubuntu Linux)
+* Docker
+* Jenkins (running inside Docker container)
+
+
 ## Why run Jenkins in a Docker container instead of installing it directly on the Droplet OS?
 * **Isolation & Portability**
   - Jenkins and its dependencies live inside the container, avoiding conflicts with host packages.
