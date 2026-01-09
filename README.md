@@ -23,14 +23,18 @@ This repository documents the steps to install and run Jenkins inside a Docker c
   - Reduces risk of breaking the system when upgrading Jenkins or its dependencies.
 
 ## Prerequisites
-* A DigitalOcean account and a provisioned droplet (Ubuntu recommended).
-* SSH access to the droplet.
-* Docker and Docker Compose installed.
-* Basic knowledge of Linux commands.
+Before you being, make sure you have:
+* A DigitalOcean account (or any cloud provider).
+* Basic knowledge of Linux commands and SSH.
+* A local machine with SSH client installed (to connect to the droplet).
 
 ## Steps
 1. Provision a DigitalOcean Droplet
    - Create a Droplet
+     - **Datacenter** - Choose the closest datacenter to you
+     - **OS** - Select Ubuntu as the OS with the latest version
+     - **Droplet Type** - Select "Shared CPU - Basic"
+     - **CPU options** - Select the *2CPUs - 4GB RAM - 80GB* which should be sufficient enough to run Jenkins Docker container.
    - Configure SSH keys for secure access
 2. Install Docker
    - Run the following commands on your droplet
