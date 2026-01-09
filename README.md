@@ -52,7 +52,7 @@ Before you being, make sure you have:
     - The public key was added to the droplet.
     - The corresponding private key is available on your local machine.
       
-3. Install Docker
+3. Install Docker and Docker Compose
    - Run the following commands on your droplet
      ```
      apt update
