@@ -82,6 +82,7 @@ Before you being, make sure you have:
       ![alt text](image-1.png)
    
    - Create your first admin user
+   
       ![alt text](image-2.png)
 
 8. Click *Save and Finish* button
