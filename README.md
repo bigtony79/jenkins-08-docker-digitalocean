@@ -15,6 +15,12 @@ This repository documents the steps to install and run Jenkins inside a Docker c
 * Easy Backup & Restore
   - Jenkins data is stored in a Docker volume, making backups straightforward.
   - You can quickly restore by mounting the same volume to a new container.
+* Faster Recovery & Scaling
+  - If Jenkins crashes, you can redeploy the container in seconds.
+  - Supports horizontal scaling with container orchestration tools like Kubernetes.
+* Cleaner Host System
+  - Keeps the VM clean—no extra packages or dependencies installed on the OS.
+  - Reduces risk of breaking the system when upgrading Jenkins or its dependencies.
 
 ## Prerequisites
 * A DigitalOcean account and a provisioned droplet (Ubuntu recommended).
