@@ -52,16 +52,16 @@ Before you being, make sure you have:
     - The public key was added to the droplet.
     - The corresponding private key is available on your local machine.
       
-3. Install Docker and Docker Compose
+3. Install Docker
    - Run the following commands on your droplet
      ```
      apt update
      apt install docker
-     apt install docker-compose
-     
+          
      ```
      
 4. Pull latest Jenkins Docker Image from DockerHub
+
 
 5. Run Jenkins Container
 
@@ -72,7 +72,7 @@ Before you being, make sure you have:
      ```
    - Retrieve the initial admin password
      ```
-     docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+     docker exec -it -u 0 <container name or ID> cat /var/jenkins_home/secrets/initialAdminPassword
      ```
 
 7. Configure Jenkins
@@ -82,7 +82,7 @@ Before you being, make sure you have:
       ![alt text](image-1.png)
    
    - Create your first admin user
-   
+
       ![alt text](image-2.png)
 
 8. Click *Save and Finish* button
