@@ -79,6 +79,13 @@ Before you begin, make sure you have:
      ```
      docker exec -it -u 0 <container name or ID> cat /var/jenkins_home/secrets/initialAdminPassword
      ```
+     
+     OR
+
+      ```
+      cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
+      ```
+
 
 6. Configure Jenkins
    - Install recommended plugins
